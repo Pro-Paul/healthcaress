@@ -1219,6 +1219,14 @@ figcaption {
   text-decoration: underline;
 }
 
+.body {
+  background-color: hsla(0, 0%, 100%, .15);
+}
+
+.background-video {
+  position: fixed;
+}
+
 @media (max-width: 991px) {
   .section.cc-cta {
     padding-right: 0px;
