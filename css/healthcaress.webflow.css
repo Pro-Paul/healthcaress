@@ -1227,6 +1227,66 @@ figcaption {
   position: fixed;
 }
 
+.typed-wrapper {
+  position: relative;
+  left: 50%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translate(-50%, 0px);
+  -ms-transform: translate(-50%, 0px);
+  transform: translate(-50%, 0px);
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.typed {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+html.w-mod-js *[data-ix="typed-js"] {
+  opacity: 0;
+  -webkit-transform: scale(0.7000000000000003, 0.7000000000000003);
+  -ms-transform: scale(0.7000000000000003, 0.7000000000000003);
+  transform: scale(0.7000000000000003, 0.7000000000000003);
+}
+
 @media (max-width: 991px) {
   .section.cc-cta {
     padding-right: 0px;
@@ -1409,6 +1469,10 @@ figcaption {
     padding-right: 15px;
     text-align: center;
   }
+  .typed-wrapper {
+    font-size: 56px;
+    line-height: 70px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1517,6 +1581,10 @@ figcaption {
   ._404-wrap {
     padding: 30px;
   }
+  .typed-wrapper {
+    font-size: 50px;
+    line-height: 64px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1581,6 +1649,14 @@ figcaption {
   .blog-item {
     width: 100%;
     max-width: none;
+  }
+  .typed-wrapper {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .typed {
+    font-size: 40%;
+    line-height: 20px;
   }
 }
 
@@ -2277,3 +2353,4 @@ figcaption {
     grid-row-end: 3;
   }
 }
+
